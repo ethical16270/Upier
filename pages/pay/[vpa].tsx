@@ -8,7 +8,7 @@ import * as gtag from "../../analytic/gtag";
 
 const Pay: NextPage = () => {
   const router = useRouter();
-  const deeplink = `upi://pay?pn=withUpier&pa=${router.query.vpa}&cu=INR${
+  const deeplink = `paytmmp://pay?pn=withUpier&pa=${router.query.vpa}&cu=INR${
     router.query.am
       ? `&am=${
           router.query.am.includes(".")
